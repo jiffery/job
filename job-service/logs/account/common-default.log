@@ -1,0 +1,495 @@
+2018-03-06 15:37:33,197 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-06 15:37:33,221 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-06 15:37:33,226 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d78f375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50c87b21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f375618, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1810399e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32d992b2]
+2018-03-06 15:37:33,487 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-06 15:37:34,315 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-06 15:37:34,541 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-06 15:37:34,577 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-06 15:37:34,752 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:37:34 CST 2018]; root of context hierarchy
+2018-03-06 15:37:35,088 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-06 15:37:36,736 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-06 15:37:36,789 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-06 15:37:36,815 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-06 15:37:36,815 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-06 15:37:36,828 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-06 15:37:36,831 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-06 15:37:36,832 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520321856798'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-06 15:37:36,832 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-06 15:37:36,832 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-06 15:37:36,832 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@16414e40
+2018-03-06 15:37:36,929 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-06 15:37:36,930 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-06 15:37:37,021 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:37:34 CST 2018]; root of context hierarchy
+2018-03-06 15:37:37,022 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-06 15:37:37,027 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:37:37,035 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:37:37,037 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-06 15:37:37,529 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520321856798 shutting down.
+2018-03-06 15:37:37,534 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520321856798 paused.
+2018-03-06 15:37:37,535 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520321856798 shutdown complete.
+2018-03-06 15:38:50,811 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-06 15:38:50,835 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-06 15:38:50,839 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d78f375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50c87b21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f375618, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1810399e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32d992b2]
+2018-03-06 15:38:51,058 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-06 15:38:51,423 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-06 15:38:51,502 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-06 15:38:51,536 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-06 15:38:51,632 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:38:51 CST 2018]; root of context hierarchy
+2018-03-06 15:38:52,101 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-06 15:38:53,844 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-06 15:38:53,885 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-06 15:38:53,911 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-06 15:38:53,911 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-06 15:38:53,925 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-06 15:38:53,927 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-06 15:38:53,928 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520321933895'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-06 15:38:53,928 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-06 15:38:53,928 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-06 15:38:53,928 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@16414e40
+2018-03-06 15:38:54,031 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-06 15:38:54,032 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-06 15:38:54,574 INFO  impl.SchedulerManageSerivceImpl - 新增Cron任务：{"clazz":"com.job.task.JobDubboTask","cronExpression":"0/2 * * * * ?","jobGroup":"test","jobName":"simpleJob","jobStatus":"2"}
+2018-03-06 15:38:54,577 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:38:51 CST 2018]; root of context hierarchy
+2018-03-06 15:38:54,581 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:38:54,581 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-06 15:38:54,583 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:38:54,583 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-06 15:38:54,583 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520321933895 shutting down.
+2018-03-06 15:38:54,583 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520321933895 paused.
+2018-03-06 15:38:54,584 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520321933895 shutdown complete.
+2018-03-06 15:48:31,795 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-06 15:48:31,813 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-06 15:48:31,816 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d78f375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50c87b21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f375618, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1810399e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32d992b2]
+2018-03-06 15:48:32,032 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-06 15:48:32,448 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-06 15:48:32,528 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-06 15:48:32,574 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-06 15:48:32,600 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:48:32 CST 2018]; root of context hierarchy
+2018-03-06 15:48:33,013 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-06 15:48:34,788 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-06 15:48:34,836 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-06 15:48:34,865 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-06 15:48:34,866 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-06 15:48:34,878 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-06 15:48:34,880 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-06 15:48:34,881 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520322514847'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-06 15:48:34,881 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-06 15:48:34,881 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-06 15:48:34,881 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@16414e40
+2018-03-06 15:48:34,978 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-06 15:48:34,978 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-06 15:48:35,204 INFO  impl.SchedulerManageSerivceImpl - 暂停任务：{"jobGroup":"test","jobName":"simpleJob"}
+2018-03-06 15:48:35,207 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:48:32 CST 2018]; root of context hierarchy
+2018-03-06 15:48:35,208 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-06 15:48:35,211 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-06 15:48:35,211 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322514847 shutting down.
+2018-03-06 15:48:35,211 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322514847 paused.
+2018-03-06 15:48:35,211 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322514847 shutdown complete.
+2018-03-06 15:48:35,214 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:48:35,215 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:49:47,248 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-06 15:49:47,269 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-06 15:49:47,274 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d78f375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50c87b21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f375618, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1810399e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32d992b2]
+2018-03-06 15:49:47,505 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-06 15:49:47,894 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-06 15:49:47,985 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-06 15:49:48,019 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-06 15:49:48,043 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:49:48 CST 2018]; root of context hierarchy
+2018-03-06 15:49:48,468 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-06 15:49:50,203 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-06 15:49:50,250 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-06 15:49:50,277 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-06 15:49:50,277 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-06 15:49:50,291 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-06 15:49:50,293 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-06 15:49:50,294 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520322590261'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-06 15:49:50,294 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-06 15:49:50,294 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-06 15:49:50,294 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@16414e40
+2018-03-06 15:49:50,385 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-06 15:49:50,385 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-06 15:49:50,677 INFO  impl.SchedulerManageSerivceImpl - 恢复任务：{"jobGroup":"test","jobName":"simpleJob"}
+2018-03-06 15:49:50,680 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:49:48 CST 2018]; root of context hierarchy
+2018-03-06 15:49:50,681 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-06 15:49:50,682 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-06 15:49:50,682 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:49:50,682 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322590261 shutting down.
+2018-03-06 15:49:50,683 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322590261 paused.
+2018-03-06 15:49:50,683 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322590261 shutdown complete.
+2018-03-06 15:49:50,684 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:51:01,578 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-06 15:51:01,598 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-06 15:51:01,601 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d78f375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50c87b21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f375618, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1810399e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32d992b2]
+2018-03-06 15:51:01,813 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-06 15:51:02,363 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-06 15:51:02,604 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-06 15:51:02,645 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-06 15:51:02,696 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:51:02 CST 2018]; root of context hierarchy
+2018-03-06 15:51:02,979 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-06 15:51:04,434 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-06 15:51:04,474 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-06 15:51:04,500 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-06 15:51:04,500 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-06 15:51:04,515 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-06 15:51:04,519 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-06 15:51:04,519 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520322664484'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-06 15:51:04,520 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-06 15:51:04,520 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-06 15:51:04,520 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@16414e40
+2018-03-06 15:51:04,622 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-06 15:51:04,622 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-06 15:51:06,624 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-06 15:51:06,831 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322664484 started.
+2018-03-06 15:51:09,572 INFO  impl.SchedulerManageSerivceImpl - 删除任务：{"clazz":"com.job.task.JobDubboTask","cronExpression":"0/5 * * * * ?","jobGroup":"test","jobName":"simpleJob","jobStatus":"2"}
+2018-03-06 15:51:09,653 INFO  impl.SchedulerManageSerivceImpl - 新增Cron任务：{"clazz":"com.job.task.JobDubboTask","cronExpression":"0/5 * * * * ?","jobGroup":"test","jobName":"simpleJob","jobStatus":"2"}
+2018-03-06 15:51:09,653 INFO  impl.SchedulerManageSerivceImpl - 更新Cron任务（先删除再更新）：{"clazz":"com.job.task.JobDubboTask","cronExpression":"0/5 * * * * ?","jobGroup":"test","jobName":"simpleJob","jobStatus":"2"}
+2018-03-06 15:51:09,663 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Tue Mar 06 15:51:02 CST 2018]; root of context hierarchy
+2018-03-06 15:51:09,674 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-06 15:51:09,679 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:51:09,679 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322664484 paused.
+2018-03-06 15:51:09,680 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-06 15:51:09,680 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-06 15:51:09,681 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322664484 shutting down.
+2018-03-06 15:51:09,681 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322664484 paused.
+2018-03-06 15:51:09,682 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520322664484 shutdown complete.
+2018-03-07 17:48:06,388 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 17:48:06,440 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 17:48:06,446 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d78f375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50c87b21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f375618, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1810399e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32d992b2]
+2018-03-07 17:48:06,702 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 17:48:07,142 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 17:48:07,320 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 17:48:07,355 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 17:48:07,415 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Wed Mar 07 17:48:07 CST 2018]; root of context hierarchy
+2018-03-07 17:48:07,783 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 17:48:09,560 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 17:48:09,600 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 17:48:09,627 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 17:48:09,628 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 17:48:09,640 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 17:48:09,642 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 17:48:09,643 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520416089610'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 17:48:09,643 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 17:48:09,643 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 17:48:09,643 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@16414e40
+2018-03-07 17:48:09,752 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:48:09,752 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:48:09,910 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Wed Mar 07 17:48:07 CST 2018]; root of context hierarchy
+2018-03-07 17:48:09,913 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 17:48:09,914 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 17:48:09,910 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 17:48:09,920 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 17:48:09,920 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416089610 shutting down.
+2018-03-07 17:48:09,920 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416089610 paused.
+2018-03-07 17:48:09,920 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416089610 shutdown complete.
+2018-03-07 17:55:01,254 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 17:55:01,272 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 17:55:01,277 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d78f375, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@50c87b21, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5f375618, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1810399e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@32d992b2]
+2018-03-07 17:55:01,521 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 17:55:01,984 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 17:55:02,161 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 17:55:02,209 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 17:55:02,269 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Wed Mar 07 17:55:02 CST 2018]; root of context hierarchy
+2018-03-07 17:55:02,564 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 17:55:04,566 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 17:55:04,606 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 17:55:04,636 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 17:55:04,636 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 17:55:04,648 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 17:55:04,651 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 17:55:04,652 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520416504617'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 17:55:04,652 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 17:55:04,652 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 17:55:04,652 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@16414e40
+2018-03-07 17:55:04,768 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:55:04,768 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:55:05,956 INFO  impl.SchedulerManageSerivceImpl - 新增Cron任务：{"clazz":"com.job.task.JobDubboTask","cronExpression":"0/10 * * * * ?","jobGroup":"test","jobName":"simpleJob","jobParam":"111","jobStatus":"2","jobText":"123"}
+2018-03-07 17:55:05,974 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@343f4d3d: startup date [Wed Mar 07 17:55:02 CST 2018]; root of context hierarchy
+2018-03-07 17:55:05,975 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 17:55:05,981 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 17:55:05,982 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 17:55:05,994 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 17:55:05,995 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416504617 shutting down.
+2018-03-07 17:55:05,995 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416504617 paused.
+2018-03-07 17:55:05,997 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416504617 shutdown complete.
+2018-03-07 18:00:18,349 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 18:00:18,379 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 18:00:18,387 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ac13091, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e316c74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d2a209c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75329a49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@161479c6]
+2018-03-07 18:00:18,674 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:00:19,141 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:00:19,228 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:00:19,270 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:00:19,532 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:00:19 CST 2018]; root of context hierarchy
+2018-03-07 18:00:19,849 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:00:21,836 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:00:21,893 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:00:21,925 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:00:21,925 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:00:21,941 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:00:21,943 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:00:21,944 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520416821905'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:00:21,944 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:00:21,944 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:00:21,944 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@4a9486c0
+2018-03-07 18:00:22,224 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:00:22,224 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:00:42,324 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:00:42,977 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416821905 started.
+2018-03-07 18:00:44,014 INFO  impl.SchedulerManageSerivceImpl - 新增Cron任务：{"clazz":"com.job.task.JobDubboTask","cronExpression":"0/10 * * * * ?","jobGroup":"test","jobName":"simpleJob","jobParam":"111","jobStatus":"2","jobText":"123"}
+2018-03-07 18:01:05,195 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:00:19 CST 2018]; root of context hierarchy
+2018-03-07 18:01:05,195 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 18:01:05,206 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416821905 paused.
+2018-03-07 18:01:05,210 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 18:01:05,210 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416821905 shutting down.
+2018-03-07 18:01:05,210 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416821905 paused.
+2018-03-07 18:01:05,213 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416821905 shutdown complete.
+2018-03-07 18:01:05,214 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:01:05,216 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:05:40,786 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 18:05:40,814 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 18:05:40,821 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ac13091, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e316c74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d2a209c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75329a49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@161479c6]
+2018-03-07 18:05:41,087 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:05:41,689 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:05:41,754 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:05:41,800 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:05:41,824 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:05:41 CST 2018]; root of context hierarchy
+2018-03-07 18:05:42,140 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:05:44,125 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:05:44,171 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:05:44,202 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:05:44,203 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:05:44,218 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:05:44,221 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:05:44,222 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520417144182'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:05:44,222 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:05:44,223 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:05:44,223 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@4fe875be
+2018-03-07 18:05:44,498 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:05:44,498 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:05:44,604 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:05:44,607 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:05:44,623 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:05:41 CST 2018]; root of context hierarchy
+2018-03-07 18:05:44,624 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 18:05:44,630 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 18:05:44,630 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417144182 shutting down.
+2018-03-07 18:05:44,631 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417144182 paused.
+2018-03-07 18:05:44,632 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417144182 shutdown complete.
+2018-03-07 18:08:34,887 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 18:08:34,909 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 18:08:34,915 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ac13091, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e316c74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d2a209c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75329a49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@161479c6]
+2018-03-07 18:08:35,205 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:08:35,759 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:08:35,836 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:08:35,877 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:08:35,933 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:08:35 CST 2018]; root of context hierarchy
+2018-03-07 18:08:36,316 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:08:38,658 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:08:38,698 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:08:38,730 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:08:38,730 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:08:38,745 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:08:38,748 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:08:38,749 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520417318710'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:08:38,749 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:08:38,749 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:08:38,749 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@67dba613
+2018-03-07 18:08:39,010 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:08:39,011 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:08:42,656 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:08:54,526 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417318710 started.
+2018-03-07 18:08:59,082 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:08:59,084 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:08:59,092 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:08:35 CST 2018]; root of context hierarchy
+2018-03-07 18:08:59,094 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 18:08:59,097 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417318710 paused.
+2018-03-07 18:08:59,103 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 18:08:59,103 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417318710 shutting down.
+2018-03-07 18:08:59,104 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417318710 paused.
+2018-03-07 18:08:59,105 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417318710 shutdown complete.
+2018-03-07 18:13:36,512 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 18:13:36,542 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 18:13:36,549 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ac13091, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e316c74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d2a209c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75329a49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@161479c6]
+2018-03-07 18:13:36,820 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:13:37,277 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:13:37,453 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:13:37,493 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:13:37,522 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:13:37 CST 2018]; root of context hierarchy
+2018-03-07 18:13:37,834 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:13:40,272 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:13:40,324 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:13:40,357 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:13:40,358 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:13:40,373 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:13:40,376 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:13:40,377 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520417620335'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:13:40,377 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:13:40,377 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:13:40,377 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@40ee0a22
+2018-03-07 18:13:40,667 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:13:40,668 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:13:44,030 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:13:50,449 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:13:37 CST 2018]; root of context hierarchy
+2018-03-07 18:13:50,450 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 18:13:50,458 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 18:13:50,458 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417620335 shutting down.
+2018-03-07 18:13:50,458 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417620335 paused.
+2018-03-07 18:13:50,459 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417620335 shutdown complete.
+2018-03-07 18:13:50,460 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:13:50,464 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:18:34,295 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 18:18:34,322 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 18:18:34,330 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ac13091, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e316c74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d2a209c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75329a49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@161479c6]
+2018-03-07 18:18:34,603 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:18:35,421 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:18:35,541 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:18:35,580 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:18:35,610 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:18:35 CST 2018]; root of context hierarchy
+2018-03-07 18:18:35,885 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:18:38,011 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:18:38,060 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:18:38,090 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:18:38,090 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:18:38,104 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:18:38,106 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:18:38,107 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520417918069'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:18:38,107 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:18:38,107 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:18:38,108 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@57540fd0
+2018-03-07 18:18:38,389 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:18:38,389 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:18:41,883 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:18:42,943 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417918069 started.
+2018-03-07 18:18:43,037 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2018-03-07 18:18:43,223 INFO  support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2018-03-07 18:18:47,293 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:18:35 CST 2018]; root of context hierarchy
+2018-03-07 18:18:47,294 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 18:18:47,297 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:18:47,297 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417918069 paused.
+2018-03-07 18:18:47,300 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:18:47,331 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 18:18:47,332 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417918069 shutting down.
+2018-03-07 18:18:47,332 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417918069 paused.
+2018-03-07 18:18:47,336 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417918069 shutdown complete.
+2018-03-07 18:20:18,340 INFO  support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-03-07 18:20:18,377 INFO  support.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2018-03-07 18:20:18,383 INFO  support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ac13091, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5e316c74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6d2a209c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@75329a49, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@161479c6]
+2018-03-07 18:20:18,648 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:20:19,147 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:20:19,319 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:20:19,360 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:20:19,388 INFO  support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:20:19 CST 2018]; root of context hierarchy
+2018-03-07 18:20:19,742 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:20:21,760 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:20:21,809 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:20:21,837 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:20:21,837 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:20:21,850 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:20:21,853 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:20:21,855 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520418021817'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:20:21,855 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:20:21,855 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:20:21,855 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@4a9486c0
+2018-03-07 18:20:22,136 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:20:22,136 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:20:24,913 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:20:26,667 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520418021817 started.
+2018-03-07 18:20:28,788 INFO  impl.SchedulerManageSerivceImpl - 新增Cron任务：{"clazz":"com.job.task.JobDubboTask","createMan":1,"createTime":1520418022167,"cronExpression":"0/10 * * * * ?","jobGroup":"test","jobName":"simpleJob","jobParam":"111","jobStatus":"2","jobText":"123","scheduleJobId":1,"updateMan":1,"updateTime":1520418022167}
+2018-03-07 18:20:28,861 INFO  support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3daa422a: startup date [Wed Mar 07 18:20:19 CST 2018]; root of context hierarchy
+2018-03-07 18:20:28,864 INFO  support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2018-03-07 18:20:28,869 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520418021817 paused.
+2018-03-07 18:20:28,874 INFO  config.AbstractConfig -  [DUBBO] Run shutdown hook now., dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:20:28,878 INFO  quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
+2018-03-07 18:20:28,878 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520418021817 shutting down.
+2018-03-07 18:20:28,878 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520418021817 paused.
+2018-03-07 18:20:28,879 INFO  support.AbstractRegistryFactory -  [DUBBO] Close all registries [], dubbo version: 2.5.3, current host: 127.0.0.1
+2018-03-07 18:20:28,880 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520418021817 shutdown complete.

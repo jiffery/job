@@ -1,0 +1,505 @@
+2018-03-07 17:26:56,961 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 17:26:56 CST 2018]; root of context hierarchy
+2018-03-07 17:26:57,107 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 17:26:57,472 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 17:26:57,599 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 17:26:58,558 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 17:26:59,158 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 17:27:01,740 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 17:27:01,829 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 17:27:01,857 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 17:27:01,857 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 17:27:01,890 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 17:27:01,892 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 17:27:01,893 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520414821839'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 17:27:01,893 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 17:27:01,893 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 17:27:01,894 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@69c6161d
+2018-03-07 17:27:01,976 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:27:01,976 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:27:01,984 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:27:01,984 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:27:04,003 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:27:04,012 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:27:04,050 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520414821839 started.
+2018-03-07 17:27:04,235 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 17:27:04,235 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520330991786"'s failed in-progress jobs.
+2018-03-07 17:27:04,449 INFO  quartz.LocalDataSourceJobStore - ClusterManager: ......Freed 1 acquired trigger(s).
+2018-03-07 17:27:04,503 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520414821839 started.
+2018-03-07 17:27:04,543 INFO  quartz.LocalDataSourceJobStore - Handling 1 trigger(s) that missed their scheduled fire-time.
+2018-03-07 17:27:04,649 ERROR quartz.LocalDataSourceJobStore - MisfireHandler: Error handling misfires: Couldn't store trigger 'test.simpleJob' for 'test.simpleJob' job:Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805
+org.quartz.JobPersistenceException: Couldn't store trigger 'test.simpleJob' for 'test.simpleJob' job:Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: org.quartz.JobPersistenceException: Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805]]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1228)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doUpdateOfMisfiredTrigger(JobStoreSupport.java:1042)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverMisfiredJobs(JobStoreSupport.java:991)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3249)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:3997)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4018)
+Caused by: org.quartz.JobPersistenceException: Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1397)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1210)
+	... 5 more
+Caused by: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.HashMap.readObject(HashMap.java:1404)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2018)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1942)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.getObjectFromBlob(StdJDBCDelegate.java:3201)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:860)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	... 6 more
+2018-03-07 17:28:04,534 INFO  quartz.LocalDataSourceJobStore - Handling 1 trigger(s) that missed their scheduled fire-time.
+2018-03-07 17:29:00,979 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 17:29:00 CST 2018]; root of context hierarchy
+2018-03-07 17:29:01,078 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 17:29:01,298 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 17:29:01,342 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 17:29:01,725 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 17:29:02,138 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 17:29:04,797 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 17:29:04,852 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 17:29:04,881 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 17:29:04,881 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 17:29:04,894 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 17:29:04,897 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 17:29:04,898 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520414944861'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 17:29:04,898 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 17:29:04,898 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 17:29:04,899 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@c68a5f8
+2018-03-07 17:29:04,988 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:29:04,988 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:29:04,997 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:29:04,997 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:29:06,990 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:29:07,031 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:29:07,033 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520414944861 started.
+2018-03-07 17:29:07,065 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 17:29:07,066 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520414821839"'s failed in-progress jobs.
+2018-03-07 17:29:07,150 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520414944861 started.
+2018-03-07 17:29:07,156 INFO  quartz.LocalDataSourceJobStore - Handling 1 trigger(s) that missed their scheduled fire-time.
+2018-03-07 17:29:07,195 ERROR quartz.LocalDataSourceJobStore - MisfireHandler: Error handling misfires: Couldn't store trigger 'test.simpleJob' for 'test.simpleJob' job:Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805
+org.quartz.JobPersistenceException: Couldn't store trigger 'test.simpleJob' for 'test.simpleJob' job:Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: org.quartz.JobPersistenceException: Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805]]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1228)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doUpdateOfMisfiredTrigger(JobStoreSupport.java:1042)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverMisfiredJobs(JobStoreSupport.java:991)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3249)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:3997)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4018)
+Caused by: org.quartz.JobPersistenceException: Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1397)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1210)
+	... 5 more
+Caused by: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.HashMap.readObject(HashMap.java:1404)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2018)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1942)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.getObjectFromBlob(StdJDBCDelegate.java:3201)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:860)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	... 6 more
+2018-03-07 17:29:58,775 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 17:29:58 CST 2018]; root of context hierarchy
+2018-03-07 17:29:58,878 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 17:29:59,101 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 17:29:59,149 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 17:29:59,551 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 17:29:59,894 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 17:30:02,235 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 17:30:02,293 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 17:30:02,333 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 17:30:02,333 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 17:30:02,352 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 17:30:02,355 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 17:30:02,356 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520415002303'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 17:30:02,357 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 17:30:02,357 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 17:30:02,357 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@c68a5f8
+2018-03-07 17:30:02,469 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:30:02,469 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:30:02,479 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:30:02,479 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:30:04,474 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:30:04,481 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:30:04,481 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520415002303 started.
+2018-03-07 17:30:04,550 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 17:30:04,550 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520414944861"'s failed in-progress jobs.
+2018-03-07 17:30:04,601 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520415002303 started.
+2018-03-07 17:30:04,605 INFO  quartz.LocalDataSourceJobStore - Handling 1 trigger(s) that missed their scheduled fire-time.
+2018-03-07 17:30:04,649 ERROR quartz.LocalDataSourceJobStore - MisfireHandler: Error handling misfires: Couldn't store trigger 'test.simpleJob' for 'test.simpleJob' job:Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805
+org.quartz.JobPersistenceException: Couldn't store trigger 'test.simpleJob' for 'test.simpleJob' job:Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: org.quartz.JobPersistenceException: Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805]]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1228)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doUpdateOfMisfiredTrigger(JobStoreSupport.java:1042)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverMisfiredJobs(JobStoreSupport.java:991)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doRecoverMisfires(JobStoreSupport.java:3249)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.manage(JobStoreSupport.java:3997)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$MisfireHandler.run(JobStoreSupport.java:4018)
+Caused by: org.quartz.JobPersistenceException: Couldn't retrieve job because the BLOB couldn't be deserialized: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805 [See nested exception: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805]
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1397)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1210)
+	... 5 more
+Caused by: java.io.InvalidClassException: com.job.entity.ScheduleJob; local class incompatible: stream classdesc serialVersionUID = 9044473148843597867, local class serialVersionUID = 3682237868576343805
+	at java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:616)
+	at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1630)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1521)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1781)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at java.util.HashMap.readObject(HashMap.java:1404)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1058)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1909)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2018)
+	at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1942)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1808)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1353)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:373)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.getObjectFromBlob(StdJDBCDelegate.java:3201)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:860)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	... 6 more
+2018-03-07 17:45:10,867 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 17:45:10 CST 2018]; root of context hierarchy
+2018-03-07 17:45:10,974 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 17:45:11,216 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 17:45:11,264 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 17:45:11,649 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 17:45:12,188 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 17:45:14,161 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 17:45:14,214 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 17:45:14,242 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 17:45:14,242 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 17:45:14,256 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 17:45:14,259 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 17:45:14,260 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520415914223'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 17:45:14,260 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 17:45:14,260 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 17:45:14,260 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@69c6161d
+2018-03-07 17:45:14,356 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:45:14,357 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:45:14,367 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:45:14,367 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:45:16,358 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:45:16,412 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:45:16,412 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520415914223 started.
+2018-03-07 17:45:16,498 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520415914223 started.
+2018-03-07 17:54:56,489 WARN  quartz.LocalDataSourceJobStore - This scheduler instance (john-PC1520415914223) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2018-03-07 17:55:27,799 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:55:28,599 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:55:30,087 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:55:40,863 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:55:50,047 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:56:00,050 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:56:10,063 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:56:20,072 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:56:30,081 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:56:40,047 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:56:50,119 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:57:00,073 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:57:10,050 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:57:20,074 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:57:30,049 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 17:57:36,499 WARN  quartz.LocalDataSourceJobStore - This scheduler instance (john-PC1520415914223) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2018-03-07 17:57:56,501 WARN  quartz.LocalDataSourceJobStore - This scheduler instance (john-PC1520415914223) is still active but was recovered by another instance in the cluster.  This may cause inconsistent behavior.
+2018-03-07 17:58:54,847 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 17:58:54 CST 2018]; root of context hierarchy
+2018-03-07 17:58:54,934 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 17:58:55,177 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 17:58:55,225 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 17:58:55,602 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 17:58:55,938 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 17:58:58,191 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 17:58:58,232 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 17:58:58,264 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 17:58:58,264 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 17:58:58,276 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 17:58:58,279 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 17:58:58,280 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520416738244'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 17:58:58,280 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 17:58:58,280 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 17:58:58,281 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@4b6ac111
+2018-03-07 17:58:58,531 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:58:58,532 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:58:58,541 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 17:58:58,541 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 17:59:00,532 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:59:00,543 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 17:59:00,544 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416738244 started.
+2018-03-07 17:59:00,652 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520416738244 started.
+2018-03-07 17:59:20,640 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 17:59:20,641 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520415914223"'s failed in-progress jobs.
+2018-03-07 18:01:40,641 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:01:40,641 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520416821905"'s failed in-progress jobs.
+2018-03-07 18:05:27,166 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 18:05:27 CST 2018]; root of context hierarchy
+2018-03-07 18:05:27,269 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:05:27,494 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:05:27,541 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:05:27,963 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:05:28,387 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:05:30,732 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:05:30,775 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:05:30,803 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:05:30,803 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:05:30,818 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:05:30,822 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:05:30,823 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520417130785'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:05:30,823 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:05:30,823 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:05:30,823 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@5c089b2f
+2018-03-07 18:05:31,054 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:05:31,054 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:05:31,062 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:05:31,063 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:05:33,057 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:05:33,096 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:05:33,099 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417130785 started.
+2018-03-07 18:05:33,175 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417130785 started.
+2018-03-07 18:05:53,191 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:05:53,191 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520416738244"'s failed in-progress jobs.
+2018-03-07 18:09:33,205 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:09:33,205 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520417318710"'s failed in-progress jobs.
+2018-03-07 18:13:09,523 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 18:13:09 CST 2018]; root of context hierarchy
+2018-03-07 18:13:09,617 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:13:09,827 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:13:09,869 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:13:10,231 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:13:10,537 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:13:12,996 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:13:13,041 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:13:13,068 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:13:13,068 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:13:13,083 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:13:13,085 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:13:13,087 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520417593050'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:13:13,087 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:13:13,087 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:13:13,087 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@5c089b2f
+2018-03-07 18:13:13,316 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:13:13,317 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:13:13,326 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:13:13,326 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:13:15,318 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:13:15,328 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:13:15,350 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417593050 started.
+2018-03-07 18:13:15,391 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:13:15,391 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520417130785"'s failed in-progress jobs.
+2018-03-07 18:13:15,700 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417593050 started.
+2018-03-07 18:14:35,478 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:14:35,478 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520417620335"'s failed in-progress jobs.
+2018-03-07 18:18:13,333 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 18:18:13 CST 2018]; root of context hierarchy
+2018-03-07 18:18:13,439 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:18:13,640 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:18:13,695 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:18:14,117 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:18:14,444 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:18:16,868 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:18:16,911 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:18:16,938 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:18:16,938 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:18:16,952 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:18:16,954 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:18:16,955 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520417896920'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:18:16,956 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:18:16,956 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:18:16,956 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@4b6ac111
+2018-03-07 18:18:17,217 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:18:17,217 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:18:17,227 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:18:17,227 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:18:19,229 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:18:19,232 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:18:19,232 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417896920 started.
+2018-03-07 18:18:19,299 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:18:19,299 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520417593050"'s failed in-progress jobs.
+2018-03-07 18:18:19,472 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520417896920 started.
+2018-03-07 18:19:19,445 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:19:19,445 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520417918069"'s failed in-progress jobs.
+2018-03-07 18:20:40,398 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:20:41,652 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:20:50,044 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:20:59,412 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:20:59,412 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520418021817"'s failed in-progress jobs.
+2018-03-07 18:21:01,791 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:21:10,070 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:21:51,322 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:21:55,868 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:21:55,927 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:21:56,022 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:22:00,153 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:22:10,083 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:22:22,453 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:22:32,716 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:22:42,329 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:22:53,163 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:23:03,394 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:23:12,478 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:23:20,038 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:23:30,047 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:23:40,072 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:23:50,053 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:24:52,274 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Wed Mar 07 18:24:52 CST 2018]; root of context hierarchy
+2018-03-07 18:24:52,365 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-07 18:24:52,622 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-07 18:24:52,669 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-07 18:24:53,027 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-07 18:24:53,431 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-07 18:24:55,668 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-07 18:24:55,714 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-07 18:24:55,743 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-07 18:24:55,743 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-07 18:24:55,760 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-07 18:24:55,765 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-07 18:24:55,766 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520418295724'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-07 18:24:55,766 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-07 18:24:55,766 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-07 18:24:55,767 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@5c089b2f
+2018-03-07 18:24:56,030 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:24:56,030 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:24:56,040 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-07 18:24:56,041 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-07 18:24:58,031 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:24:58,076 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-07 18:24:58,078 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520418295724 started.
+2018-03-07 18:24:58,109 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-07 18:24:58,110 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520417896920"'s failed in-progress jobs.
+2018-03-07 18:24:58,285 INFO  quartz.LocalDataSourceJobStore - ClusterManager: ......Freed 1 acquired trigger(s).
+2018-03-07 18:24:58,334 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520418295724 started.
+2018-03-07 18:25:06,164 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:06,164 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:06,182 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:25:08,505 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:25:09,476 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:09,476 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:25:10,091 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:10,091 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:25:10,659 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:10,664 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:25:11,252 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:11,252 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:25:11,874 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:11,874 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:25:13,626 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:25:13,626 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:13,848 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:13,849 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:16,108 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:16,108 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:17,685 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:17,687 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:17,767 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:17,768 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:17,866 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:17,866 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:17,958 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:17,958 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:20,088 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:20,088 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:30,413 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:30,413 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:45,328 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:45,328 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:26:50,089 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:26:50,089 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:27:00,215 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:27:00,216 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:27:10,064 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:27:10,064 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:27:22,703 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:27:22,703 INFO  task.JobDubboTask - job执行完毕
+2018-03-07 18:27:30,068 INFO  task.JobDubboTask - 数据ScheduleJob{scheduleJobId=1, jobName='simpleJob', jobGroup='test', clazz='com.job.task.JobDubboTask', jobStatus='2', cronExpression='0/10 * * * * ?', jobText='123', jobParam='111', timeValue=null, timeType='null', jobDesc='null', createMan=1, createTime=Wed Mar 07 18:20:22 CST 2018, updateMan=1, updateTime=Wed Mar 07 18:20:22 CST 2018}
+2018-03-07 18:27:30,068 INFO  task.JobDubboTask - job执行完毕

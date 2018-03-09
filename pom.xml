@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jobs-master</groupId>
+    <artifactId>jobs-master</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>job-common</module>
+        <module>job-service</module>
+        <module>job-core</module>
+        <module>job-web</module>
+    </modules>
+
+    <properties>
+        <junit.version>4.10</junit.version>
+        <!-- spring版本号 -->
+        <spring.version>4.3.9.RELEASE</spring.version>
+        <slf4j.version>1.7.7</slf4j.version>
+        <aspectj.version>1.6.12</aspectj.version>
+        <cglib.version>2.2</cglib.version>
+        <!-- dubbo版本号 -->
+        <dubbo.version>2.5.3</dubbo.version>
+        <zkclient.version>0.1</zkclient.version>
+        <zookeeper.version>3.4.5</zookeeper.version>
+        <!--jedis -->
+        <jedis.version>2.7.2</jedis.version>
+        <!-- json -->
+        <fastjson.version>1.2.7</fastjson.version>
+        <mybatis.version>3.2.8</mybatis.version>
+        <mysql-connector-java.version>5.1.31</mysql-connector-java.version>
+        <mybatis-spring.version>1.2.1</mybatis-spring.version>
+        <dbcp2.version>2.0.1</dbcp2.version>
+        <quartz.version>2.3.0</quartz.version>
+        <javaee-api.version>7.0</javaee-api.version>
+        <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+        <javax.ws.rs-api.version>2.0-m08</javax.ws.rs-api.version>
+    </properties>
+
+
+    <!-- 不同的打包环境 -->
+    <profiles>
+        <!-- 本地开发环境，默认激活 -->
+        <profile>
+            <id>local</id>
+            <properties>
+                <env>local</env>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault><!--默认启用 -->
+            </activation>
+        </profile>
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

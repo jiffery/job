@@ -1,0 +1,43 @@
+2018-03-08 16:48:57,788 INFO  support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Thu Mar 08 16:48:57 CST 2018]; root of context hierarchy
+2018-03-08 16:48:58,112 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-provider.xml]
+2018-03-08 16:48:58,750 INFO  logger.LoggerFactory - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-03-08 16:48:58,849 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-mybatis.xml]
+2018-03-08 16:48:59,766 INFO  xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [spring-quartz.xml]
+2018-03-08 16:49:00,409 INFO  support.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties]
+2018-03-08 16:49:13,854 INFO  quartz.SchedulerFactoryBean - Loading Quartz config from [class path resource [quartz.properties]]
+2018-03-08 16:49:13,981 INFO  impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2018-03-08 16:49:14,097 INFO  core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2018-03-08 16:49:14,097 INFO  core.QuartzScheduler - Quartz Scheduler v.2.3.0 created.
+2018-03-08 16:49:14,129 INFO  quartz.LocalDataSourceJobStore - Using db table-based data access locking (synchronization).
+2018-03-08 16:49:14,133 INFO  quartz.LocalDataSourceJobStore - JobStoreCMT initialized.
+2018-03-08 16:49:14,134 INFO  core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'scheduler' with instanceId 'john-PC1520498954042'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 25 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+2018-03-08 16:49:14,134 INFO  impl.StdSchedulerFactory - Quartz scheduler 'scheduler' initialized from an externally provided properties instance.
+2018-03-08 16:49:14,134 INFO  impl.StdSchedulerFactory - Quartz scheduler version: 2.3.0
+2018-03-08 16:49:14,134 INFO  core.QuartzScheduler - JobFactory set to: com.job.factory.CustomJobFactory@5c089b2f
+2018-03-08 16:49:14,574 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-08 16:49:14,574 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-08 16:49:14,614 INFO  support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2018-03-08 16:49:14,614 INFO  quartz.SchedulerFactoryBean - Will start Quartz Scheduler [scheduler] in 2 seconds
+2018-03-08 16:49:16,591 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-08 16:49:16,616 INFO  quartz.SchedulerFactoryBean - Starting Quartz Scheduler now, after delay of 2 seconds
+2018-03-08 16:49:16,616 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520498954042 started.
+2018-03-08 16:49:17,467 INFO  quartz.LocalDataSourceJobStore - ClusterManager: detected 1 failed or restarted instances.
+2018-03-08 16:49:17,467 INFO  quartz.LocalDataSourceJobStore - ClusterManager: Scanning for instance "john-PC1520418295724"'s failed in-progress jobs.
+2018-03-08 16:49:18,103 INFO  quartz.LocalDataSourceJobStore - ClusterManager: ......Freed 1 acquired trigger(s).
+2018-03-08 16:49:18,228 INFO  core.QuartzScheduler - Scheduler scheduler_$_john-PC1520498954042 started.
+2018-03-08 16:49:18,360 INFO  quartz.LocalDataSourceJobStore - Handling 1 trigger(s) that missed their scheduled fire-time.
+2018-03-08 16:49:25,230 INFO  task.JobDubboTask - 未找到远程接口
+2018-03-08 16:49:25,231 INFO  task.JobDubboTask - job执行完毕
+2018-03-08 16:49:30,036 INFO  task.JobDubboTask - 未找到远程接口
+2018-03-08 16:49:30,036 INFO  task.JobDubboTask - job执行完毕
+2018-03-08 16:49:40,103 INFO  task.JobDubboTask - 未找到远程接口
+2018-03-08 16:49:40,104 INFO  task.JobDubboTask - job执行完毕
+2018-03-08 16:49:50,141 INFO  task.JobDubboTask - 未找到远程接口
+2018-03-08 16:49:50,153 INFO  task.JobDubboTask - job执行完毕
