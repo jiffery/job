@@ -27,7 +27,7 @@ public class JobDubboTask implements Job {
                ScheduleJob job=(ScheduleJob) obj;
                ZookConfig config= JsonUtil.fromJson(job.getJobText(),ZookConfig.class);
                if(config==null){
-                   log.info("未找到远程接口");
+                   log.info("未找到远程接口"+job);
                    continue;
                }
                config.setRetries(0);
